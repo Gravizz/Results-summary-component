@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "HankenGrotesk";
+  src: local("HankenGrotesk"),
+    url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px;
+  margin-bottom: 100px;
+}
+
+.result-box,
+.summary-box {
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+  padding: 5%;
+  border-radius: 20px;
+}
+.result-box {
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  text-align: center;
+  color: gainsboro;
+}
+.title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.circle-pad {
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  padding-top: 15%;
+  margin-bottom: 20px;
+}
+.score-big {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.result-max {
+  margin: 0px;
+  font-size: 1rem;
+}
+h1 {
+  margin: 15px;
+}
+.info {
+  font-size: 18px;
+  margin: 15px;
+}
+.summary-box {
+  gap: 20px;
+}
+
+.reaction-box,
+.memory-box,
+.verbal-box,
+.visual-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 5px;
+  padding: 10px 10px 10px 0px;
+}
+.reaction-box {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.memory-box {
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+.verbal-box {
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+.visual-box {
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+.warper {
+  display: flex;
+}
+button {
+  background-color: hsl(224, 30%, 27%);
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 20px;
+}
+.score {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  padding-right: 5px;
+}
+.max {
+  color: gainsboro;
+}
+h1 {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 0px !important;
+  }
+  .content {
+    flex-direction: column !important;
+  }
+  .result-box,
+  .summary-box {
+    height: auto;
+    width: 100vw !important;
+  }
+  .result-box {
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+  }
+}
